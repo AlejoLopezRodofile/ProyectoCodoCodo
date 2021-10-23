@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <title>Integrador1</title>    
+    <meta charset="UTF-8"> <!-- codificación de caracteres utilizada -->
+    <meta name="title" content="Codo a Codo">
+    <meta name="description" content="Descripción de la WEB">   <!-- Las metaetiquetas a nivel de página son una forma perfecta con la que los propietarios de sitios web pueden facilitar a los buscadores información sobre sus sitios -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="EstiloEjercicioIntegrador2/Integrador.css">
+    <script src="JS/JavaScript.js"></script>
+  </head>
+
+<body>
+   
+  <div>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="ImagenesEjercicioIntegrador2/codoacodo.png" alt="" width="70" height="44" class="d-inline-block align-text-top">
+          Conf Bs As
+        </a>
+
+        <div class="flex">
+         <a class="navbar-brand" href="#" style="font-size: 20px; color: white;">
+            La conferencia
+          </a>
+
+         <a class="navbar-brand" href="#" style="font-size: 20px; color: grey;">
+            Los oradores
+         </a>
+
+         <a class="navbar-brand" href="#" style="font-size: 20px; color: grey;">
+            El lugar y la fecha
+          </a>
+
+         <a class="navbar-brand" href="#" style="font-size: 20px; color: grey;">
+           Conviertete en orador
+          </a>
+
+          <a class="navbar-brand" href="#" style="font-size: 20px; color: green;">
+              Comprar tickets
+             </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+
+  <div class="container" style="width: 50%; margin-top: 3%;">
+    
+    
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100" style="border-color: rgb(0, 123, 255);border-radius: 0%">
+            <div class="card-body">
+              <h3 class="card-title"style="text-align:center;">Estudiante</h3>
+              <p class="card-text"style="text-align:center;font-size: 110%;">Tienen un descuento</p>
+              <p class="card-text"style="text-align:center;font-size: 100%"><b>80%</b></p>
+              <p class="card-text" style="text-align: center;"><small class="text-muted">*Presentar documentación</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="border-color: rgb(23, 162, 184);border-radius: 0%;">
+            <div class="card-body">
+              <h3 class="card-title"style="text-align:center;">Trainee</h3>
+              <p class="card-text" style="text-align:center;font-size: 110%;">Tienen un descuento</p>
+              <p class="card-text"style="text-align:center;font-size: 100%"><b>50%</b></p>
+              <p class="card-text" style="text-align: center;"><small class="text-muted">*Presentar documentación</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100"style="border-color: rgb(255,193, 7);border-radius: 0%;">
+            <div class="card-body">
+              <h3 class="card-title"style="text-align:center;">Junior</h3>
+              <p class="card-text"style="text-align:center;font-size: 110%;">Tienen un descuento</p>
+              <p class="card-text"style="text-align:center;font-size: 100%"><b>15%</b></p>
+              <p class="card-text" style="text-align: center;"><small class="text-muted">*Presentar documentación</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="texto">
+        <p>VENTA</p>
+        <H1>VALOR DEL TICKET $200</H1>
+      </div>
+
+      <form action="#" style="margin-top: 2%;">
+        <div class="mb-3">
+          <div class="flex2">
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre"> 
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+          </div>
+        </div>
+        <div class="mb-3">
+          <input type="mail" class="form-control" id="inputEmail4" placeholder="Correo">
+        </div>
+        <div class="flex2">
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Cantidad</label>
+            <input type="number" class="form-control" id="cantidad">
+          </div>
+          <div class="col-md-6">
+            <label for="inputState" class="form-label">Categoria</label>
+            <select id="inputState" class="form-select" style="width: 94%;">
+              <option selected>Estudiante</option>
+              <option>Junior</option>
+              <option>Trainee</option>
+            </select>
+          </div>
+        </div>
+        <input class="form-control" type="text" value="Total a pagar: $" aria-label="readonly input example" readonly style="background: rgb(204,229,255);margin-top: 5%;padding: 2%;">
+        <div class="flex2">
+          <button type="button" id="borrar" class="btn btn-success" style="background-color:rgb(151, 210, 62);width: 50%;margin-top: 5%;">Borrar</button>
+          <button type="submit" onclick="resumen();" id="resumen" class="btn btn-success" style="background-color:rgb(151, 210, 62);width: 50%;margin-top: 5%;">Resumen</button>
+        </div>
+      </form>
+
+    
+  </div>
+
+  <div class="downbar">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color:white;margin-right: 45px;">Preguntas Frecuentes</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color:white;margin-right: 45px;">Contáctenos</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color:white;margin-right: 45px;">Prensa</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color:white;margin-right: 45px;">Conferencias</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#" style="color:white;margin-right: 45px;">Términos y condiciones</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#" style="color:white;margin-right: 45px;">Privacidad</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#" style="color:white;">Estudiantes</a>
+        </li> 
+      </ul>
+  </div>
+
+</body>
+
+</html>

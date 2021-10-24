@@ -110,17 +110,17 @@
           </div>
           <div class="col-md-6">
             <label for="inputState" class="form-label">Categoria</label>
-            <select id="inputState" class="form-select" style="width: 94%;">
+            <select id="categoria" class="form-select" style="width: 94%;">
               <option selected>Estudiante</option>
               <option>Junior</option>
               <option>Trainee</option>
             </select>
           </div>
         </div>
-        <input class="form-control" type="text" value="Total a pagar: $" aria-label="readonly input example" readonly style="background: rgb(204,229,255);margin-top: 5%;padding: 2%;">
+        <input class="form-control" id="importeTotal" type="text" value="Total a pagar: $" aria-label="readonly input example" readonly style="background: rgb(204,229,255);margin-top: 5%;padding: 2%;">
         <div class="flex2">
           <button type="button" id="borrar" class="btn btn-success" style="background-color:rgb(151, 210, 62);width: 50%;margin-top: 5%;">Borrar</button>
-          <button type="submit" onclick="resumen();" id="resumen" class="btn btn-success" style="background-color:rgb(151, 210, 62);width: 50%;margin-top: 5%;">Resumen</button>
+          <button type="button" onclick="resumen();" id="botonCalculo" class="btn btn-success" style="background-color:rgb(151, 210, 62);width: 50%;margin-top: 5%;">Resumen</button>
         </div>
       </form>
 
